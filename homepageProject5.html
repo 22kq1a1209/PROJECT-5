@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#courses {
+    padding: 20px;
+}
+
+#courses h2 {
+    text-align: center;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-box {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.course-box img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+<script>
+    // Add any interactivity you need here
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Future Tech homepage loaded');
+});
+</script>
+<body>
+    <header>
+        <h1>Future Tech</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Join Us and Start Your Journey</h2>
+        <p>We offer courses to help you get software jobs</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-box">
+                <img src="C:\Users\gummm\OneDrive\Desktop\navya's\programmind language.jpg" alt="Course 1">
+                <p>Course 1: Introduction to Programming</p>
+            </div>
+            <div class="course-box">
+                <img src="Website-Development-Designing.png" alt="Course 2">
+                <p>Course 2: Web Development</p>
+            </div>
+            <div class="course-box">
+                <img src="dataSciences.jpg" alt="Course 3">
+                <p>Course 3: Data Science</p>
+            </div>
+            <div class="course-box">
+                <img src="machinelearning.jpg" alt="Course 4">
+                <p>Course 4: Machine Learning</p>
+            </div>
+            <div class="course-box">
+                <img src="cyber security.jpg" alt="Course 5">
+                <p>Course 5: Cyber Security</p>
+            </div>
+            <div class="course-box">
+                <img src="cloudComputing.jpg" alt="Course 6">
+                <p>Course 6: Cloud Computing</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Future Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

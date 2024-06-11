@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> ui develpment in html</title>
+    </head>
+    <style>
+        div {
+            background-color:aqua;
+            height: 50%;
+            width: 50%;
+
+        }
+    </style>
+
+<script> 
+function loginValidation() {
+             // Ramesh
+   var uname = document.myform.username.value;
+              //Ramesh@123
+   var password = document.myform.password.value;
+    var firstname = document.myform.username.value;
+              //Ramesh@123
+   var lastname = document.myform.password.value;
+   var conformpassword=document.myform.conformpassword.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            else if (firstname==null  || firstname==""){
+               alert("first name cant be blank")
+               return false;
+            }  
+            else if (lastname==null || lastname=""){
+               alert("lastname cant be blank")
+               return false;
+            } 
+            else if (conformpassword.length==password.length){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+    return true;
+        }
+   </script>
+ 
+
+     <body>
+
+        <b><h1><marquee scrollment="1"><font face="impact" color=blue>Resistration Page</font></marquee></h1></b>
+     
+
+        
+<center>
+    <div>
+ </body>
+   
+    <body>
+        <body background="C:\Users\gummm\Downloads\Software-development.jpg"> </body>
+        <form name="myform" action="loginpage.html" onsubmit="return loginValidation(this)"> <br> 
+        username : <input type="text" name="username"> <br>
+        firstname:<input type="text" name="firstname"><br>
+       lastname:<input type="text" name="lastname"><br>
+        password : <input type="pass" nmae="password"> <br>
+        conformpassword :<input type="pass" name="cnf pass"><br>
+        <input type="submit"></center>
+        </form>
+        </body>
+    </div>
+</center>
+</html>
